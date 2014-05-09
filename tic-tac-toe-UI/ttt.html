@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="ttt.css" type="text/css" charset="utf-8">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="underscore.js"></script>
+  <script type="text/javascript" src="ttt.js"></script>
+
+
+</head>
+
+
+<body>
+  <h1>Play Tic Tac Toe!</h1>
+  <div id="board">
+    <script>
+      _.times(3, function(i) {
+        _.times(3, function(j) {
+          $('#board').append('<div data-coords=[' + i + ',' + j + '] class="square"></div>');
+        });
+      });
+    </script>
+  </div>
+  <div class='buttonHolder'>
+    <input type='submit' value='New Game'>
+  </div>
+
+
+
+</body>
+
+</html>
